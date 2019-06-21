@@ -24,7 +24,7 @@
 				<h2>Danh mục sách</h2>
 			</caption>
 			<tr>
-				<th>Mã</th>
+				<th>Mã sách</th>
 				<th>Tên sách</th>
 				<th>Tác giả</th>
 				<th>Giá bán</th>
