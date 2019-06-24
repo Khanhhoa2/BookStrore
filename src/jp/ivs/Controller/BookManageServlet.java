@@ -16,8 +16,16 @@ import jp.ivs.Model.DBUtils;
 @WebServlet("/")
 public class BookManageServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
     
+	public BookManageServlet() {
+		
+	}
+
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html;charset=UTF-8");
+		request.setCharacterEncoding("utf-8");
 		// Xem URL người ta chọn hành động gì
 		String action = request.getServletPath();
 		// tùy thuộc vào hành động là gì, mà gọi HÀM được viết ở ngoài doGet cho gọn
@@ -77,7 +85,7 @@ public class BookManageServlet extends HttpServlet {
 		
 		// Sử dụng chức năng điều hướng
         RequestDispatcher dispatcher = request.getRequestDispatcher("BookDetails.jsp");
-        request.setAttribute("book", book2Show);   // Truyền dữ liệu ra trang jsp
+        request.setAttribute("book_1", book2Show);   // Truyền dữ liệu ra trang jsp
         // thực hiện điều hướng
         dispatcher.forward(request, response);
     }
@@ -98,7 +106,7 @@ public class BookManageServlet extends HttpServlet {
         
         // Truyền thông tin ngược ra trong JSP để hiện lên form cập nhật
         RequestDispatcher dispatcher = request.getRequestDispatcher("BookEdit.jsp");  // sử dụng chức năng điều hướng
-        request.setAttribute("book", existingBook);  // truyền dữ liệu qua jsp
+        request.setAttribute("book_1", existingBook);  // truyền dữ liệu qua jsp
         dispatcher.forward(request, response);    // thực hiện điều hướng URL
  
     }
@@ -140,6 +148,8 @@ public class BookManageServlet extends HttpServlet {
     }
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		response.setContentType("text/html;charset=UTF-8");
+		request.setCharacterEncoding("utf-8");
 		doGet(request, response);
 	}
 

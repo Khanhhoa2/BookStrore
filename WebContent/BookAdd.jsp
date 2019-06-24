@@ -11,8 +11,8 @@
 <center>
 		<h1>QUẢN LÝ SÁCH</h1>
 		<h2>
-			<a href="/BookStore/new">Thêm mới Sách</a> &nbsp;&nbsp;&nbsp; <a
-				href="/BookStore/list">Danh sách Sách</a>
+			<a href="/BookStrore/new">Thêm mới Sách</a> &nbsp;&nbsp;&nbsp; <a
+				href="/BookStrore/list">Danh  Sách</a>
 
 		</h2>
 	</center>

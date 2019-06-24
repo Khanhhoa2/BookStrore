@@ -11,8 +11,8 @@
 <center>
 		<h1>QUẢN LÝ SÁCH</h1>
 		<h2>
-			<a href="/Bookstore/new">Thêm mới Sách</a> &nbsp;&nbsp;&nbsp; <a
-				href="/Bookstore/list">Danh sách Sách</a>
+			<a href="/BookStrore/new">Thêm mới Sách</a> &nbsp;&nbsp;&nbsp; <a
+				href="/BookStrore/list">Danh  Sách</a>
 
 		</h2>
 	</center>
@@ -25,9 +25,9 @@
 			<b>Tác giả</b><c:out value="${book.author}" /> </br> 
 			<b>Giá bán</b> <c:out value="${book.price}" /> </br>  
 			
-			 <a href="/Bookstore/edit?id=<c:out value='${book.id}' />">Sửa</a>
+			 <a href="/BookStrore/edit?id=<c:out value='${book.id}' />">Sửa</a>
 						&nbsp;&nbsp;&nbsp;&nbsp; <a
-						href="/Bookstore/delete?id=<c:out value='${book.id}' />">Xóa</a>
+						href="/BookStrore/delete?id=<c:out value='${book.id}' />">Xóa</a>
 	</div>
 </body>
 </html>
